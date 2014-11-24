@@ -19,7 +19,6 @@ class OnsetFrameSplitter(object):
         """
 
         onsets_output_file = "onsets.txt"
-        #input_music_file = sys.argv[1]
         #OD_METHOD = 'mkl'
 
         # Executing aubioonset command to get the onsets.
