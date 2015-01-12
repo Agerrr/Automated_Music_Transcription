@@ -22,13 +22,20 @@ class MusicTranscriber(object):
         """
 
         splitter = OnsetFrameSplitter(self.music_file, self.onset_frames_dir)
+        print 'Created onset frame splitter object'
         splitter.onset_frames_split()
+        print 'Splitted the file into frames'
         note_plotter = NotePlotter(self.music_file)
+        print 'Created a note plotter object'
         note_plotter.plot_multiple_notes(self.onset_frames_dir)
+        print 'Plotted multiple notes'
 
 
 if __name__ == '__main__':
     # Provide the name of the music file (in wav. format) to be transcribed.
     music_file = sys.argv[1]
+    print 'Read in a music file'
     transcriber = MusicTranscriber(music_file)
+    print 'Created a transcriber object'
     transcriber.transcribe()
+    print 'Transcribed the music piece'

@@ -17,7 +17,7 @@ class OnsetFrameSplitter(object):
         """
             Splits a music file into onset frames.
         """
-
+        print 'Just about to execute object frames split function'
         onsets_output_file = "onsets.txt"
         #OD_METHOD = 'mkl'
 
@@ -28,6 +28,7 @@ class OnsetFrameSplitter(object):
             print 'onsets: '
             for o in onsets:
                 print o
+        print 'Executed aubioonset function to split the file into onsets'
 
         # Reading in the music wave and getting parameters.
         input_music_wave = wave.open(self.music_file, "rb")
@@ -47,6 +48,7 @@ class OnsetFrameSplitter(object):
         if not os.path.exists(self.output_directory):
             os.makedirs(self.output_directory)
 
+        print 'Just about to split the file into onset frames'
         # Splitting the music file into onset frames.
         for i in range(len(onsets) - 1):
             frame = int(framerate * (onsets[i + 1] - onsets[i]))
@@ -56,6 +58,7 @@ class OnsetFrameSplitter(object):
             music_wave.setnframes(frame)
             music_wave.writeframes(sound)
             music_wave.close()
+        print 'Split the file into onset frames'
 
 
 if __name__ == '__main__':
