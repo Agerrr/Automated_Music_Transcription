@@ -11,4 +11,10 @@ Afterwards just run:
 python music_transcriber.py music_file_name.wav
 
 
+### Example
+Example input: twinkle_short.wav
+
+Corresponding example output: twinkle_short.pdf
+
+
 
