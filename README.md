@@ -20,6 +20,7 @@ Corresponding example output with sheet notes: twinkle_short.pdf
 If you'd like to hear the MIDI output:
 
 sudo apt-get install timidity
+
 timidity twinkle_short.mid
 
 #### Polyphonic
