@@ -159,6 +159,7 @@ class NotePlotter(object):
         """
 
         lilypond_text = '\\version \"2.14.2\" \n'
+        lilypond_text += '\\score { \n'
         lilypond_text += '  \\new PianoStaff { \n'
         lilypond_text += '    \\autochange { \n'
 
@@ -177,6 +178,7 @@ class NotePlotter(object):
                 lilypond_text += ' >'
 
         lilypond_text += '    \n}  \n}'
+        lilypond_text += '\\layout { } \n \\midi { }  \n}'
         with open(self.output_file, 'w') as f:
             f.write(lilypond_text)
         command = "lilypond "
