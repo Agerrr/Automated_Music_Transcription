@@ -12,9 +12,22 @@ python music_transcriber.py music_file_name.wav
 
 
 ### Example
-Example input: twinkle_short.wav
+#### Monophonic
+Input example: twinkle_short.wav
 
-Corresponding example output: twinkle_short.pdf
+Corresponding example output with sheet notes: twinkle_short.pdf
+
+If you'd like to hear the MIDI output:
+
+sudo apt-get install timidity
+timidity twinkle_short.mid
+
+#### Polyphonic
+Input example: Mozart_Polonaise_part.wav
+
+Output example: Mozart_Polonaise_part.pdf
+
+
 
 
 
