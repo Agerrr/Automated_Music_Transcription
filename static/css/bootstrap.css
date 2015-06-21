@@ -12,6 +12,11 @@
   *zoom: 1;
 }
 
+body {
+  margin: 0;
+  background: url('../images/piano_wallpaper.jpg');
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;

@@ -1,3 +1,4 @@
+from flask import Flask
 from flask import request
 from flask import redirect, url_for, render_template
 from werkzeug import secure_filename
@@ -44,4 +45,4 @@ def display_sheet_notes(filename):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='localhost', port=9090, debug=True)
